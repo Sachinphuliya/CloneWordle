@@ -21,8 +21,7 @@ print(len(words_five))
 print_menu()
 play_again = ""
 while play_again != "q":
-    #word = read_random_word()
-    # This fixes a bug of getting words with capitals!
+   
     word = random.choice(words_five).lower()
     for attempt in range(1, 7):
         guess = input().lower()
